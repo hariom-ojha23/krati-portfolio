@@ -1,0 +1,297 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidebar {
+  overflow: auto;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: black;
+  width: 400px;
+  -webkit-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.6);
+  -webkit-transition: width .35s;
+  transition: width .35s;
+}
+
+#sidebar .close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  width: 100%;
+}
+
+#sidebar .close-btn #closer {
+  margin: 1em 1.5em;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: #333;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+#sidebar .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#sidebar .options h3 {
+  color: white;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+#sidebar .options h3::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -8px;
+  left: -10px;
+  position: absolute;
+  z-index: -1;
+  background-color: #d7b474;
+  border-radius: 25px;
+}
+
+#sidebar .options a {
+  text-decoration: none;
+  font-size: 15px;
+  padding: 15px 0;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+#sidebar.collapsed {
+  width: 0;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar .nav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav-box .navbar-brand {
+  font-size: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+.navbar .nav-box .navbar-brand::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  left: -10px;
+  position: absolute;
+  z-index: -1;
+  background-color: #d7b474;
+  border-radius: 25px;
+}
+
+.navbar .nav-box .bars {
+  cursor: pointer;
+}
+
+.navbar .nav-box .bars .bar1, .navbar .nav-box .bars .bar2, .navbar .nav-box .bars .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+header .parallax {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+header .parallax::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/bg.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(1);
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
+header .parallax .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+header .parallax .container .title h5 {
+  color: #d7b474;
+  font-weight: 300;
+  margin: 20px 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+}
+
+header .parallax .container .title h1 {
+  color: white;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 74px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+header .parallax .container .btn-container {
+  margin: 30px 0;
+}
+
+header .parallax .container .btn-container button {
+  display: inline-block;
+  margin: 0 10px 20px;
+  border: 1px solid white;
+  border-radius: 0%;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+header .parallax .container .btn-container button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #d7b474;
+}
+
+header .parallax .container .btn-container button span {
+  position: relative;
+  z-index: 1;
+}
+
+header .parallax .container .btn-container button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .parallax .container .btn-container .btn {
+  -webkit-transition: background 0.15s, color 0.25s;
+  transition: background 0.15s, color 0.25s;
+}
+
+header .parallax .container .btn-container .btn:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scale(1, 0) translateZ(0);
+          transform: scale(1, 0) translateZ(0);
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+header .parallax .container .btn-container .btn:hover {
+  color: #fff;
+  border: 1px solid #d7b474;
+}
+
+header .parallax .container .btn-container .btn:hover:before {
+  -webkit-transform: scale(1) translateZ(0);
+          transform: scale(1) translateZ(0);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  perspective: 2px;
+  -webkit-perspective: 2px;
+}
+
+main #about {
+  background-color: #161616;
+  height: 100vh;
+}
+
+@media (max-width: 420px) {
+  #sidebar {
+    width: 100%;
+    -webkit-transition: width .35s;
+    transition: width .35s;
+  }
+}
+/*# sourceMappingURL=style.css.map */

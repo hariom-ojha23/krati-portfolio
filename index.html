@@ -5,13 +5,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./resource/bootstrap.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./sass/style.css" >
     </head>
     <body>
-        <div>
-            
+
+        <nav class="navbar fixed-top">
+            <div id="sidebar" class="collapsed">
+                <div class="close-btn">
+                    <span class="toggler" id="closer" title="Close sidebar">X</span>
+                </div>
+                <div class="options">
+                    <h3>Beautician</h3>
+                    <a class="nav-item" href="#home">Home</a>
+                    <a class="nav-item" href="#about">About</a>
+                    <a class="nav-item" href="#">Services</a>
+                    <a class="nav-item" href="#">Portfolio</a>
+                    <a class="nav-item" href="#">Contacts</a>
+                </div>
+            </div>
+            <div class="container nav-box">
+                <a class="navbar-brand" href="#">Beautician</a>
+                <div class="bars toggler">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+            <header id="home">
+                <section class="parallax">
+                    <div class="container">
+                        <div class="title">
+                            <h5>Makeup Artist & Beautician</h5>
+                            <h1>Krati Solanki</h1>
+                        </div>
+                        <div class="btn-container">
+                            <button type="button" class="btn">
+                                <span>contact me</span>
+                            </button>
+                        </div>
+                        <div class="">
+
+                        </div>
+                    </div>
+                </section>
+            </header>
+    
+            <main>
+                <Section id="about">
+                    <div class="container">
+                        <div class="row rwo-content m-auto align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h1>photo</h1>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <h1>photo</h1>
+                            </div>
+                        </div>
+                    </div>
+                </Section>
+            </main>
         </div>
+
         <script src="./resource/jquery.slim.min.js"></script>
         <script src="./resource/popper.min.js"></script>
         <script src="./resource/bootstrap.min.js"></script>
+        <script src="./script/script.js"></script>
     </body>
 </html>

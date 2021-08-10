@@ -1,0 +1,246 @@
+$color-primary : #d7b474;
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#sidebar {
+    overflow: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    width: 400px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.6);
+    transition: width .35s;
+    .close-btn {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        #closer {
+            margin: 1em 1.5em;
+            color: white;
+            font-size: 2rem;
+            font-weight: 300;
+            background-color: #333;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 25px;
+        }
+    }
+    .options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h3 {
+            color: white;
+            margin-bottom: 1em;
+            position: relative;
+            &::before {
+                content: "";
+                width: 50px;
+                height: 50px;
+                top: -8px;
+                left: -10px;
+                position: absolute;
+                z-index: -1;
+                background-color: $color-primary;
+                border-radius: 25px;
+            }
+        }
+        a {
+            text-decoration: none;
+            font-size: 15px;
+            padding: 15px 0;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: white;
+        }
+    }
+}
+
+#sidebar.collapsed {
+    width: 0
+}
+
+.navbar {
+    width: 100%;
+    z-index: 1;
+    .nav-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .navbar-brand {
+            font-size: 2rem;
+            color: #fff;
+            position: relative;
+            &::before {
+                content: "";
+                width: 50px;
+                height: 50px;
+                left: -10px;
+                position: absolute;
+                z-index: -1;
+                background-color: $color-primary;
+                border-radius: 25px;
+            }
+        }
+        .bars {
+            cursor: pointer;
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 2px;
+                background-color: #fff;
+                margin: 8px 0;
+            }
+        }
+    }
+}
+
+#content {
+    width: 100vw;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;
+	-webkit-perspective: 1px;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+}
+
+header {
+    .parallax {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+
+        &::after {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url("../images/bg.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            z-index: -1;
+            content: "";
+            transform: translateZ(-1px) scale(1);
+            -webkit-transform: translateZ(-1px) scale(2);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            .title {
+                h5 {
+                    color: $color-primary;
+                    font-weight: 300;
+                    margin: 20px 0;
+                    text-transform: uppercase;
+                    text-align: center;
+                    font-weight: 400;
+                }
+                h1 {
+                    color: white;
+                    font-size: 4rem;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    line-height: 74px;
+                    font-family: 'Poppins', sans-serif;
+                    text-align: center;
+                }
+            }
+
+            .btn-container {
+                margin: 30px 0;
+
+                button {
+                    display: inline-block;
+                    margin: 0 10px 20px; 
+                    border: 1px solid white;
+                    border-radius: 0%;
+                    color: #fff;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    text-decoration: none;
+                    padding: 15px 40px;
+                    position: relative;
+                    overflow: hidden;
+                    &:before {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        background-color: $color-primary;
+                    }
+                    span {
+                        position: relative;
+                        z-index: 1;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .btn {
+                    transition: background 0.15s, color 0.25s;
+                    &:before {
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        transform-origin: center; //this is the magic
+                        transform: scale(1, 0) translateZ(0);
+                        transition: all 0.25s ease-out;
+                    }
+                    &:hover {
+                        color: #fff;
+                        border: 1px solid $color-primary;
+                        &:before { transform: scale(1) translateZ(0); }
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
+
+main {
+    height: 100%;
+    width: 100%;
+	perspective: 2px;
+	-webkit-perspective: 2px;
+
+    #about {
+        background-color: #161616;
+        height: 100vh;
+    }
+}
+
+@media (max-width: 420px) {
+    #sidebar {
+        width: 100%;
+        transition: width .35s;
+    }
+}
