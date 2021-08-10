@@ -23,6 +23,7 @@ body {
 }
 
 #sidebar .close-btn {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,6 +97,7 @@ body {
 .navbar {
   width: 100%;
   z-index: 1;
+  padding: 10px 20px;
 }
 
 .navbar .nav-box {
@@ -284,7 +286,173 @@ main {
 
 main #about {
   background-color: #161616;
-  height: 100vh;
+  padding: 100px 0;
+}
+
+main #about .self-info, main #about .self-img {
+  margin: 20px 0;
+}
+
+main #about .self-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #about .self-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #about .self-info .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #about .self-info .heading h6 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #d7b474;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+main #about .self-info .heading span {
+  margin: 0 10px;
+  background-color: #d7b474;
+  width: 40px;
+  height: 1px;
+}
+
+main #about .self-info .bio h1 {
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+main #about .self-info .bio p {
+  color: #b1b1b1;
+  letter-spacing: 1px;
+}
+
+main #services {
+  background-color: #131313;
+  padding: 100px 0;
+}
+
+main #services .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #services .heading h6 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #d7b474;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+main #services .heading span {
+  margin: 0 10px;
+  background-color: #d7b474;
+  width: 40px;
+  height: 1px;
+}
+
+main #services h2 {
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+main #services .service-card {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #services .service-card .card {
+  width: 90%;
+  border-radius: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #131313;
+  -webkit-box-shadow: -2px -2px 15px black;
+          box-shadow: -2px -2px 15px black;
+}
+
+main #services .service-card .card .card-title {
+  padding: 20px 35px;
+}
+
+main #services .service-card .card .card-title h3 {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+main #services .service-card .card .card-title h3::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+  opacity: 0.7;
+  position: absolute;
+  background-color: #d7b474;
+  border-radius: 20px;
+}
+
+main #services .service-card .card .card-img {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+main #services .service-card .card:hover .card-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media (max-width: 420px) {
