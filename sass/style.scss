@@ -243,6 +243,9 @@ main {
         .self-img {
             display: flex;
             justify-content: center;
+            .my-img {
+                width: 80%;
+            }
         }
         .self-info {
             display: flex;
@@ -306,7 +309,7 @@ main {
             }
         }
 
-        h2 {
+        h1 {
             color: white;
             text-transform: uppercase;
             margin: 20px 0;
@@ -362,11 +365,88 @@ main {
             }
         }
     }
+
+    #portfolio {
+        background-color: #131313;
+        padding: 100px 0;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            h6 {
+                margin: 0;
+                text-transform: uppercase;
+                color: $color-primary;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+            span {
+                margin: 0 10px;
+                background-color: $color-primary;
+                width: 40px;
+                height: 1px
+            }
+        }
+
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            margin: 20px 0;
+            letter-spacing: 1.5px;
+            text-align: center;
+        }
+
+        .gallery-card  {
+            padding: 20px 20px;
+
+            .card {
+                border-radius: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #131313;
+                position: relative;
+                cursor: pointer;
+
+                .card-img {
+                    transform: scale(1.2);
+                    opacity: 1;
+                    transition: opacity .5s, transform .2s;
+                }
+
+                .search-icon {
+                    font-size: 40px;
+                    font-weight: 300;
+                    color: #fff;
+                    position: absolute;
+                    top: 48%;
+                    left: 48%;
+                    display: none
+                }
+
+                &:hover {
+                    .card-img {
+                        opacity: 0.3;
+                        transform: scale(1);
+                    }
+
+                    .search-icon {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 420px) {
     #sidebar {
         width: 100%;
         transition: width .35s;
+    }
+
+    .my-img {
+        width: 100%;
     }
 }

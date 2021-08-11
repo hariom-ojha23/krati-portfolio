@@ -302,6 +302,10 @@ main #about .self-img {
           justify-content: center;
 }
 
+main #about .self-img .my-img {
+  width: 80%;
+}
+
 main #about .self-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,7 +395,7 @@ main #services .heading span {
   height: 1px;
 }
 
-main #services h2 {
+main #services h1 {
   color: white;
   text-transform: uppercase;
   margin: 20px 0;
@@ -455,11 +459,101 @@ main #services .service-card .card:hover .card-img {
           transform: scale(1.1);
 }
 
+main #portfolio {
+  background-color: #131313;
+  padding: 100px 0;
+}
+
+main #portfolio .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #portfolio .heading h6 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #d7b474;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+main #portfolio .heading span {
+  margin: 0 10px;
+  background-color: #d7b474;
+  width: 40px;
+  height: 1px;
+}
+
+main #portfolio h1 {
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+main #portfolio .gallery-card {
+  padding: 20px 20px;
+}
+
+main #portfolio .gallery-card .card {
+  border-radius: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #131313;
+  position: relative;
+  cursor: pointer;
+}
+
+main #portfolio .gallery-card .card .card-img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1;
+  -webkit-transition: opacity .5s, -webkit-transform .2s;
+  transition: opacity .5s, -webkit-transform .2s;
+  transition: opacity .5s, transform .2s;
+  transition: opacity .5s, transform .2s, -webkit-transform .2s;
+}
+
+main #portfolio .gallery-card .card .search-icon {
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  display: none;
+}
+
+main #portfolio .gallery-card .card:hover .card-img {
+  opacity: 0.3;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+main #portfolio .gallery-card .card:hover .search-icon {
+  display: block;
+}
+
 @media (max-width: 420px) {
   #sidebar {
     width: 100%;
     -webkit-transition: width .35s;
     transition: width .35s;
+  }
+  .my-img {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
