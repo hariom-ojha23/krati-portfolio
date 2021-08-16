@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="./sass/style.css" >
     </head>
     <body>
-
-        <nav class="navbar fixed-top">
+        <nav id="nav" class="navbar fixed-top">
             <div id="sidebar" class="collapsed">
                 <div class="close-btn">
                     <span class="toggler" id="closer" title="Close sidebar">X</span>
@@ -21,7 +20,7 @@
                     <a class="nav-item" href="#about">About</a>
                     <a class="nav-item" href="#services">Services</a>
                     <a class="nav-item" href="#portfolio">Portfolio</a>
-                    <a class="nav-item" href="#contact">Contacts</a>
+                    <a class="nav-item" href="#contact">Contact</a>
                 </div>
             </div>
             <div class="container nav-box">
@@ -34,165 +33,348 @@
             </div>
         </nav>
 
-        <div id="content">
-            <header id="home">
-                <section class="parallax">
-                    <div class="container">
-                        <div class="title">
-                            <h5>Makeup Artist & Beautician</h5>
-                            <h1>Krati Solanki</h1>
-                        </div>
-                        <div class="btn-container">
-                            <button type="button" class="btn">
-                                <span>contact me</span>
-                            </button>
-                        </div>
-                        <div class="">
+        <header id="home">
+            <section class="parallax">
+                <div class="container">
+                    <div class="title">
+                        <h5>Makeup Artist & Beautician</h5>
+                        <h1>Krati Solanki</h1>
+                    </div>
+                    <div class="btn-container">
+                        <button type="button" class="btn">
+                            <span>contact me</span>
+                        </button>
+                    </div>
+                    <div class="">
 
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <section id="about">
+                <div class="container">
+                    <div class="row row-content m-auto align-items-center">
+                        <div class="col-12 col-md-6 self-img">
+                            <img class="img-fluid my-img" src="./images/self.jpg" >
+                        </div>
+                        <div class="col-12 col-md-6 self-info">
+                            <div class="heading">
+                                <h6>About me</h6>
+                                <span></span>
+                            </div>
+                            <div class="bio">
+                                <h1>About my story</h1>
+                                <p>
+                                    I am a Angels le lanisa and works in film and media. Works in film and media. A Digital agency media firm is a business.
+                                </p>
+                                <p>
+                                    Of one or more experts that provides professional work. The phrasal sequence of the Lorem Ipsum. Media firm is a business 
+                                    of one or more experts that provides professional work. The phrasal sequence of the Lorem Ipsum. The phrasal sequence of the Lorem Ipsum.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </header>
-    
-            <main>
-                <section id="about">
+                </div>
+            </section>
+
+            <section id="services">
+                <div class="container">
+                    <div class="row row-content m-auto align-items-center">
+                        <div class="heading">
+                            <span></span>
+                            <h6>Services</h6>
+                            <span></span>
+                        </div>
+                        <h1>Services</h1>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Facial Makeup</h3>
+                                </div>
+                                <img src="./images/facial.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Eye Makeup</h3>
+                                </div>
+                                <img src="./images/eye.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Hair Styling</h3>
+                                </div>
+                                <img src="./images/hair.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Wedding Makeup</h3>
+                                </div>
+                                <img src="./images/wedding.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Fashion Makeup</h3>
+                                </div>
+                                <img src="./images/fashion.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 service-card">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h3>Pedicure & Manicure</h3>
+                                </div>
+                                <img src="./images/pedicure.jpg" class="card-img" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row row-content m-auto align-items-center">
+                        <div class="heading">
+                            <span></span>
+                            <h6>gallery</h6>
+                            <span></span>
+                        </div>
+                        <h1>my portfolio</h1>
+
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery1.png" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery2a.jpg" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery3a.png" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery4.jpg" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery5a.jpg" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                            <div class="card">
+                                <img src="./images/gallery6a.jpg" class="card-img" alt="...">
+                                <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonial">
+                <div class="parallax">
                     <div class="container">
                         <div class="row row-content m-auto align-items-center">
-                            <div class="col-12 col-md-6 self-img">
-                                <img class="img-fluid my-img" src="./images/self.jpg" >
-                            </div>
-                            <div class="col-12 col-md-6 self-info">
+                            <div class="col-12 col-md-6">
                                 <div class="heading">
-                                    <h6>About me</h6>
+                                    <h6>testimonials</h6>
                                     <span></span>
                                 </div>
-                                <div class="bio">
-                                    <h1>About my story</h1>
-                                    <p>
-                                        I am a Angels le lanisa and works in film and media. Works in film and media. A Digital agency media firm is a business.
-                                    </p>
-                                    <p>
-                                        Of one or more experts that provides professional work. The phrasal sequence of the Lorem Ipsum. Media firm is a business 
-                                        of one or more experts that provides professional work. The phrasal sequence of the Lorem Ipsum. The phrasal sequence of the Lorem Ipsum.
-                                    </p>
+                                <h1>clients reviews</h1>
+                                <div class="pr-md-5 pr-0 mb-5">
+                                    <p>Of one or more experts that provides professional work. 
+                                        The phrasal sequence of the Lorem Ipsum. Media firm is a 
+                                        business of one or more experts that provides professional 
+                                        work. The phrasal sequence of the Lorem</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 p-0">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text">Some quick example
+                                                         text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent">~ Client</div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text">Some quick example
+                                                         text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent">~ Client</div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="card-title">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                    <p class="card-text">Some quick example
+                                                         text to build on the card title and make up the bulk of the card's content.</p>
+                                                </div>
+                                                <div class="card-footer bg-transparent">~ Client</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section id="services">
-                    <div class="container">
-                        <div class="row row-content m-auto align-items-center">
-                            <div class="heading">
-                                <span></span>
-                                <h6>Services</h6>
-                                <span></span>
+            <section id="contact">
+                <div class="container">
+                    <div class="row row-content m-auto align-items-center">
+                        <div class="heading">
+                            <span></span>
+                            <h6>contact</h6>
+                            <span></span>
+                        </div>
+                        <h1>Contact Me</h1>
+
+                        <div class="col-12 col-md-6 contact-map">
+                            <div class="google-map row justify-content-center">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.
+                                2164928952593!2d78.04239983412336!3d27.16727401466523!2m3!1f0!2f0!3f0!3
+                                m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397471177dbbc9af%3A0x53076ff57bec917
+                                !2sPaktola%2C%20Tajganj%2C%20Agra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2si
+                                n!4v1628861779049!5m2!1sen!2sin"allowfullscreen="" loading="lazy"
+                                width="90%" height="370px"
+                                ></iframe>
                             </div>
-                            <h1>Services</h1>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Facial Makeup</h3>
-                                    </div>
-                                    <img src="./images/facial.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-12 col-md-6 contact-form">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Name" >
+                                </div>
+                                <div class="col-12 col-lg-6">
+                                    <input type="email" class="form-control" placeholder="Email" >
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Eye Makeup</h3>
-                                    </div>
-                                    <img src="./images/eye.jpg" class="card-img" alt="...">
+                            <input type="text" class="form-control" placeholder="Subject" >
+                            <textarea rows="5" class="form-control" placeholder="Message" ></textarea>
+                            <button type="submit" class="btn submit-btn">
+                                <span>Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="row row-content m-auto">
+                    <div class="col d-none d-md-block p-0">
+                        <img class="img-fluid" src="./images/gallery1.1.jpg" alt="..." >
+                    </div>
+                    <div class="col d-none d-lg-block p-0">
+                        <img class="img-fluid" src="./images/last1.jpg" alt="..." >
+                    </div>
+                    <div class="col d-none d-lg-block p-0">
+                        <img class="img-fluid" src="./images/gallery1.jpg" alt="..." >
+                    </div>
+                    <div class="col p-0">
+                        <img class="img-fluid" src="./images/last2.jpg" alt="..." >
+                    </div>
+                    <div class="col d-none d-md-block p-0">
+                        <img class="img-fluid" src="./images/las3.jpg" alt="..." >
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row row-content m-auto justify-content-center">
+                    <div class="col-12 col-md-4">
+                        <h3>Beautician</h3>
+                        <div class="row m-auto contact-media">
+                            <div class="media-icon"><span class="fab fa-facebook-f"></span></div>
+                            <div class="media-icon"><span class="fab fa-twitter"></span></div>
+                            <div class="media-icon"><span class="fab fa-instagram"></span></div>
+                            <div class="media-icon"v><span class="fab fa-google"></span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h4>Contact Information</h4>
+                        <div class="contact-info">
+                            <div class="row m-auto">
+                                <div>
+                                    <span class="fab fa-instagram"></span>
+                                    kratisolanki
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Hair Styling</h3>
-                                    </div>
-                                    <img src="./images/hair.jpg" class="card-img" alt="...">
+                            <div class="row m-auto">
+                                <div>
+                                    <span class="fas fa-envelope"></span>
+                                    kratisolanki33@gmail.com
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Wedding Makeup</h3>
-                                    </div>
-                                    <img src="./images/wedding.jpg" class="card-img" alt="...">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Fashion Makeup</h3>
-                                    </div>
-                                    <img src="./images/fashion.jpg" class="card-img" alt="...">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 service-card">
-                                <div class="card">
-                                    <div class="card-title">
-                                        <h3>Pedicure & Manicure</h3>
-                                    </div>
-                                    <img src="./images/pedicure.jpg" class="card-img" alt="...">
+                            <div class="row m-auto">
+                                <div>
+                                    <span class="fas fa-phone-alt"></span>
+                                    +91 8006292819
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section id="portfolio">
-                    <div class="container">
-                        <div class="row row-content m-auto align-items-center">
-                            <div class="heading">
-                                <span></span>
-                                <h6>gallery</h6>
-                                <span></span>
-                            </div>
-                            <h1>my portfolio</h1>
-
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery1.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery3.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery4.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery5.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery6.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 gallery-card">
-                                <div class="card">
-                                    <img src="./images/gallery7.jpg" class="card-img" alt="...">
-                                    <i class="material-icons search-icon">zoom_in</i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-        </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+            </div>
+        </footer>
 
         <script src="./resource/jquery.slim.min.js"></script>
         <script src="./resource/popper.min.js"></script>

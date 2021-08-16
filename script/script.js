@@ -1,31 +1,42 @@
-const buttons = document.querySelectorAll('.toggler');
-const sidebar = document.getElementById('sidebar');
-const el = document.getElementById('content')
+var buttons = document.querySelectorAll('.toggler');
+var sidebar = document.getElementById('sidebar');
+var el = document.getElementById('content')
 
 
-buttons.forEach(btn => 
+buttons.forEach(btn => {
     btn.addEventListener('click', _ => {
         sidebar.classList.toggle('collapsed');
-        if (sidebar.classList.contains('collapsed'))
-        {
-            el.style.overflowY = 'auto'
-        } else {
-            el.style.overflowY = 'hidden'
-        }
+        // if (sidebar.classList.contains('collapsed'))
+        // {
+        //     el.style.overflowY = 'auto'
+        // } else {
+        //     el.style.overflowY = 'hidden'
+        // }
     })
-);
+});
 
-const navItems = document.querySelectorAll('.nav-item');
+// closing sidebar after clicking on any navitem
 
-navItems.forEach(btn => 
+var navItems = document.querySelectorAll('.nav-item');
+navItems.forEach(btn => {
     btn.addEventListener('click', e => {
         sidebar.classList.toggle('collapsed');
-        if (sidebar.classList.contains('collapsed'))
-        {
-            el.style.overflowY = 'auto'
-        } else {
-            el.style.overflowY = 'hidden'
-        }
+        // if (sidebar.classList.contains('collapsed'))
+        // {
+        //     el.style.overflowY = 'auto'
+        // } else {
+        //     el.style.overflowY = 'hidden'
+        // }
     })
-);
+});
 
+// changing color of navbar on scrolling
+
+$(document).on('scroll', e => {
+    var height = document.getElementById('nav').offsetHeight;
+    if ($(document).scrollTop() >= height) {
+        $('#nav').addClass('scroll');
+    } else {
+        $('#nav').removeClass('scroll');
+    }
+});
