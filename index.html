@@ -15,7 +15,7 @@
                     <span class="toggler" id="closer" title="Close sidebar">X</span>
                 </div>
                 <div class="options">
-                    <h3>Beautician</h3>
+                    <h3>Krati Solanki</h3>
                     <a class="nav-item" href="#home">Home</a>
                     <a class="nav-item" href="#about">About</a>
                     <a class="nav-item" href="#services">Services</a>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="container nav-box">
-                <a class="navbar-brand" href="#">Beautician</a>
+                <a class="navbar-brand" href="#">Krati Solanki</a>
                 <div class="bars toggler">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
@@ -150,40 +150,53 @@
                         </div>
                         <h1>my portfolio</h1>
 
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery1.png" class="card-img" alt="...">
+                                <img src="./images/gallery1.png" class="card-img p-img" alt="1">
                                 <i class="material-icons search-icon">zoom_in</i>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery2a.jpg" class="card-img" alt="...">
+                                <img src="./images/gallery2a.jpg" class="card-img p-img" alt="2">
                                 <i class="material-icons search-icon">zoom_in</i>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery3a.png" class="card-img" alt="...">
+                                <img src="./images/gallery3a.png" class="card-img p-img" alt="3">
                                 <i class="material-icons search-icon">zoom_in</i>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery4.jpg" class="card-img" alt="...">
+                                <img src="./images/gallery4.jpg" class="card-img p-img" alt="4">
                                 <i class="material-icons search-icon">zoom_in</i>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery5a.jpg" class="card-img" alt="...">
+                                <img src="./images/gallery5a.jpg" class="card-img p-img" alt="5">
                                 <i class="material-icons search-icon">zoom_in</i>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-4 gallery-card">
+                        <div class="col-12 col-md-6 col-lg-4 gallery-card" data-bs-toggle="modal" data-bs-target="#Modal">
                             <div class="card">
-                                <img src="./images/gallery6a.jpg" class="card-img" alt="...">
+                                <img src="./images/gallery6a.jpg" class="card-img p-img" alt="6">
                                 <i class="material-icons search-icon">zoom_in</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="Modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="" alt="..." id="modal-img" class="img-fluid" >
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -298,15 +311,15 @@
                         <div class="col-12 col-md-6 contact-form">
                             <div class="row">
                                 <div class="col-12 col-lg-6">
-                                    <input type="text" class="form-control" placeholder="Name" >
+                                    <input id="name" type="text" class="form-control" placeholder="Name" >
                                 </div>
                                 <div class="col-12 col-lg-6">
-                                    <input type="email" class="form-control" placeholder="Email" >
+                                    <input id="email" type="email" class="form-control" placeholder="Email" >
                                 </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="Subject" >
-                            <textarea rows="5" class="form-control" placeholder="Message" ></textarea>
-                            <button type="submit" class="btn submit-btn">
+                            <input id="subject" type="text" class="form-control" placeholder="Subject" >
+                            <textarea id="message" rows="5" class="form-control" placeholder="Message" ></textarea>
+                            <button id="send" type="submit" class="btn submit-btn">
                                 <span>Submit</span>
                             </button>
                         </div>
@@ -339,39 +352,44 @@
         <footer>
             <div class="container">
                 <div class="row row-content m-auto justify-content-center">
-                    <div class="col-12 col-md-4">
-                        <h3>Beautician</h3>
+                    <div class="col-12 col-md-4 row justify-content-center align-items-center">
+                        <img src="./images/self2.png" alt="..." class="img-fluid self-2" >
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h3>Krati Solanki</h3>
+                        <p>You can also follow me & my work at :</p>
                         <div class="row m-auto contact-media">
-                            <div class="media-icon"><span class="fab fa-facebook-f"></span></div>
-                            <div class="media-icon"><span class="fab fa-twitter"></span></div>
-                            <div class="media-icon"><span class="fab fa-instagram"></span></div>
-                            <div class="media-icon"v><span class="fab fa-google"></span></div>
+                            <a href="https://www.facebook.com/profile.php?id=100008574580700" class="media-icon"  target="_blank">
+                                <span class="fab fa-facebook-f"></span>
+                            </a>
+                            <a href="https://www.instagram.com/kratisolanki/" class="media-icon"  target="_blank">
+                                <span class="fab fa-instagram"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="col-12 col-md-4">
                         <h4>Contact Information</h4>
                         <div class="contact-info">
                             <div class="row m-auto">
-                                <div>
+                                <a href="https://www.instagram.com/kratisolanki/" target="_blank">
                                     <span class="fab fa-instagram"></span>
                                     kratisolanki
-                                </div>
+                                </a>
                             </div>
                             <div class="row m-auto">
-                                <div>
+                                <a href="mailto:kratisolanki33@gmail.com" target="_blank">
                                     <span class="fas fa-envelope"></span>
                                     kratisolanki33@gmail.com
-                                </div>
+                                </a>
                             </div>
                             <div class="row m-auto">
-                                <div>
+                                <a href="tel:+918006292819" target="_blank">
                                     <span class="fas fa-phone-alt"></span>
                                     +91 8006292819
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-4"></div>
                 </div>
             </div>
         </footer>
@@ -380,5 +398,14 @@
         <script src="./resource/popper.min.js"></script>
         <script src="./resource/bootstrap.min.js"></script>
         <script src="./script/script.js"></script>
+        <script 
+            type="text/javascript" 
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (() => {
+            emailjs.init("user_IHYiFiTnYWqt4xz7z8U4G");
+            })();
+        </script>
     </body>
 </html>

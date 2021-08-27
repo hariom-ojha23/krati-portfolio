@@ -6,6 +6,10 @@ body {
   background-color: #000;
 }
 
+a {
+  text-decoration: none;
+}
+
 #sidebar {
   overflow: auto;
   height: 100vh;
@@ -528,6 +532,33 @@ main #portfolio .gallery-card .card:hover .search-icon {
   display: block;
 }
 
+main #portfolio .modal .modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+main #portfolio .modal .modal-content .modal-header {
+  border: none;
+}
+
+main #portfolio .modal .modal-content .modal-header .btn-close {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+main #portfolio .modal .modal-content .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 main #testimonial .parallax {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../images/facial.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/facial.jpg");
@@ -715,7 +746,14 @@ main #contact .contact-form .btn:hover {
 }
 
 footer {
-  padding: 100px 0;
+  padding: 100px 0 10px;
+}
+
+footer .self-2 {
+  width: 220px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  vertical-align: middle;
 }
 
 footer h3 {
@@ -740,15 +778,16 @@ footer h3::before {
   border-radius: 25px;
 }
 
+footer p {
+  color: white;
+  font-size: 18px;
+}
+
 footer h4 {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
-  margin: 10px 0 10px;
-}
-
-footer .contact-media {
-  margin-bottom: 20px;
+  margin: 0px 0 10px;
 }
 
 footer .contact-media .media-icon {
@@ -763,6 +802,7 @@ footer .contact-media .media-icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   border: 1px solid white;
   color: white;
   border-radius: 20px;
@@ -779,10 +819,13 @@ footer .contact-media .media-icon:hover {
 
 footer .contact-info .row {
   padding: 5px;
+}
+
+footer .contact-info .row a {
   color: white;
 }
 
-footer .contact-info .row span {
+footer .contact-info .row a span {
   color: #d7b474;
   display: inline-block;
   margin-right: 15px;
